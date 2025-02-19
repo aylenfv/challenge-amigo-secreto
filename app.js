@@ -26,3 +26,12 @@ function actualizarLista (){
     }
     ;
 }
+
+function sortearAmigo() {
+    if (amigos.length > 0) {
+        let indice = Math.floor(Math.random()*amigos.length);
+        document.getElementById("resultado").innerHTML = amigos[indice];
+    } else {
+        alert("Ingresa al menos un amigo.");
+    }
+}
